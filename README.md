@@ -1,6 +1,9 @@
-# Data-Wrangling-EX1
-
+## Data-Wrangling-EX1
 ## Basic Data Manipulation
+The original data is stored as refine_original.csv and the resulted clean table is exported as a CSV file and named as refine_clean.csv.
+
+The source code is attached as Ex1 Basic Data Manipulation.r.
+
 
 ### 0: Load the data in RStudio
 Save the data set as a CSV file called refine_original.csv and load it in RStudio into a data frame.
