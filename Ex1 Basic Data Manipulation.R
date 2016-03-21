@@ -1,5 +1,3 @@
-install.packages('tm')
-library(tm)
 library(tidyr)
 
 setwd("C://Users//Tina Teng//Documents//Personal//Springboard - Foundation of Data Science//3.1 EX1")
@@ -8,7 +6,6 @@ Refine <- refine
 unique(Refine$company, incomparables = FALSE)
 sort(Refine$company)
 
-#x <- c("ak zo", "Akzo", "AKZO", "akz0")
 
 ## 1: Clean brand names
 Refine$company <- mapply(sub, x, "akzo", Refine$company)
