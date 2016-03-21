@@ -1,6 +1,8 @@
 library(tidyr)
+library(dplyr)
 
 setwd("C://Users//Tina Teng//Documents//Personal//Springboard - Foundation of Data Science//3.1 EX1")
+refine <- read.csv(file = "refine_original.csv", head=TRUE, sep =",")
 
 Refine <- refine
 unique(Refine$company, incomparables = FALSE)
@@ -8,7 +10,6 @@ sort(Refine$company)
 
 
 ## 1: Clean brand names
-Refine$company <- mapply(sub, x, "akzo", Refine$company)
 
 Refine$company <- sub("ak zo", "akzo", Refine$company)
 Refine$company <- sub("Akzo", "akzo", Refine$company)
